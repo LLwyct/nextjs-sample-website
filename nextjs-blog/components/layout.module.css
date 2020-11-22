@@ -1,0 +1,6 @@
+/* 想要使用css modules，文件名必须是*.module.css */
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+}

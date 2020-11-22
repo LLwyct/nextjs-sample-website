@@ -5,6 +5,7 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <div className="container">
+      {/* 向网页添加metadata */}
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -57,10 +58,13 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
+          {/* 这里展示了如何添加静态文件，应该把文件加入/public/文件夹下  */}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
+      {/* nextjs自身提供了css-in-js包，名为styled-jsx，允许你直接在react组件中书写scoped样式
+      当然你也可以使用其他流行的css-in-js包，例如emotion、styled-components */}
       <style jsx>{`
         .container {
           min-height: 100vh;
